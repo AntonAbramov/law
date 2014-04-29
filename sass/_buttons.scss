@@ -1,0 +1,49 @@
+.btn {
+	border-radius: 3px;
+	padding: 5px 20px;
+	text-align: left;
+	vertical-align: top;
+	display: inline-block;
+	border:none;
+	&.orange {
+		background: #ec8435;
+		color: #fff;
+		border: 1px solid #d3630d;
+		font-size: 16px;
+		vertical-align: middle;
+		height:35px;
+		&:hover, &:focus {
+			background: #ff9c50;
+			border-color:#f0893a;
+		}
+	}
+	&.gray {
+		color: #fff;
+		background: #a4a9ae;
+		font-size: 14px;
+		box-shadow:0 0 3px #83898f;
+		&:hover, &:focus {
+			box-shadow:none;
+		}
+	}
+	&.blue {
+		background: #4fc1e9;
+		color:#fff;
+		font-size: 14px;
+		box-shadow:0 0 3px #3bafda;
+		&:hover {
+			box-shadow:none;
+		}
+	}
+	&.blue-light {
+		background: #5faee3;
+		color:#fff;
+		font-size: 14px;
+		&:hover {
+			box-shadow:none;
+		}
+	}
+	&.small {
+		font-size: 12px;
+	}
+}
