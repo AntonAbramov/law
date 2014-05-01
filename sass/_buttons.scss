@@ -26,6 +26,14 @@
 			box-shadow:none;
 		}
 	}
+	&.gray-light {
+		color: #1d2123;
+		background: #f2f1f1;
+		font-size: 14px;
+		&:hover, &:focus {
+			box-shadow:none;
+		}
+	}
 	&.blue {
 		background: #4fc1e9;
 		color:#fff;
@@ -42,6 +50,11 @@
 		&:hover {
 			box-shadow:none;
 		}
+	}
+	&.dark {
+		background: #a4a9ae;
+		color:#fff;
+		font-size: 14px;
 	}
 	&.small {
 		font-size: 12px;
