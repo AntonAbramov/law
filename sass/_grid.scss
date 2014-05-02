@@ -90,9 +90,15 @@
 				}
 				font-size: 12px;
 				color:#13b0cb;
-				text-decoration: underline;
+				text-decoration: none;
+				.brd-dashed {
+					border-bottom:2px dashed;
+				}
 				&:hover {
 					text-decoration: none;
+					.brd-dashed {
+						border-bottom:none;
+					}
 				}
 			}
 		}
@@ -104,11 +110,17 @@
 				float:left;
 				margin-left:30px;
 				color:#13b0cb;
-				text-decoration: underline;
+				text-decoration: none;
 				position:relative;
 				font-size: 12px;
+				.brd-dashed {
+					border-bottom:2px dashed;
+				}
 				&:hover {
 					text-decoration:none;
+					.brd-dashed {
+						border-bottom:none;
+					}
 				}
 				&:first-child {
 					margin-left: 0;
