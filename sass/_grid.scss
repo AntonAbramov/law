@@ -92,7 +92,7 @@
 				color:#13b0cb;
 				text-decoration: none;
 				.brd-dashed {
-					border-bottom:2px dashed;
+					border-bottom:1px dashed;
 				}
 				&:hover {
 					text-decoration: none;
@@ -114,7 +114,7 @@
 				position:relative;
 				font-size: 12px;
 				.brd-dashed {
-					border-bottom:2px dashed;
+					border-bottom:1px dashed;
 				}
 				&:hover {
 					text-decoration:none;
@@ -162,6 +162,11 @@
 			border-top:none;
 		}
 	}
+	.user-section-cutstom-bg {
+		padding:8px 15px;
+		margin:-8px -15px;
+		background: #ecf9f6;
+	}
 }
 .likes-container {
 	font-family: bebas_neue_regularregular;
@@ -186,6 +191,54 @@
 			font-size: 18px;
 		.icon {
 			mamrgin-right:5px;
+		}
+	}
+
+}
+.item-answer {
+	padding:15px 20px;
+	.heading {
+		margin-bottom:12px;
+		.name-section {
+			float:left;
+			.small-avatar {
+				float:left;
+				img {
+					width:40px;
+					height:40px;
+					border:2px solid #797f86;
+					border-radius: 100px;
+					display: block;
+				}
+			}
+			.name {
+				margin-left: 50px;
+				color:#2c3e50;
+				font-size: 18px;
+				line-height: 40px;
+			}
+		}
+		.title {
+			float:right;
+			color:#2c3e50;
+			font-size: 24px;
+			font-family: bebas_neue_regularregular;
+
+		}
+	}
+	.msg {
+		textarea {
+			width:100%;
+			border-radius: 5px;
+			border:2px solid #d2d2d2;
+			background: #fff;
+			padding:5px 10px;
+			margin-bottom:10px;
+			resize: none;
+			height:100px;
+		}
+		input[type="submit"] {
+			float:right;
 		}
 	}
 }

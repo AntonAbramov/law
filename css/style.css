@@ -491,42 +491,43 @@
 }
 /* line 191, ../sass/_header.scss */
 .header .header-mid ul > li:last-child ul:before {
-  left: 96px;
+  left: auto;
+  right: 30px;
 }
-/* line 199, ../sass/_header.scss */
+/* line 200, ../sass/_header.scss */
 .header .header-bottom {
   background-color: #fff;
   padding-top: 35px;
   position: relative;
   z-index: 1;
 }
-/* line 204, ../sass/_header.scss */
+/* line 205, ../sass/_header.scss */
 .header .header-bottom .logo, .header .header-bottom .search {
   float: left;
 }
-/* line 207, ../sass/_header.scss */
+/* line 208, ../sass/_header.scss */
 .header .header-bottom .telephone {
   float: right;
 }
-/* line 210, ../sass/_header.scss */
+/* line 211, ../sass/_header.scss */
 .header .header-bottom .logo {
   width: 354px;
 }
-/* line 212, ../sass/_header.scss */
+/* line 213, ../sass/_header.scss */
 .header .header-bottom .logo img {
   display: block;
 }
-/* line 216, ../sass/_header.scss */
+/* line 217, ../sass/_header.scss */
 .header .header-bottom .search {
   width: 344px;
   padding-left: 50px;
   padding-top: 22px;
 }
-/* line 220, ../sass/_header.scss */
+/* line 221, ../sass/_header.scss */
 .header .header-bottom .search .inn {
   position: relative;
 }
-/* line 222, ../sass/_header.scss */
+/* line 223, ../sass/_header.scss */
 .header .header-bottom .search .inn input[type="search"] {
   display: block;
   width: 100%;
@@ -536,7 +537,7 @@
   padding: 0 60px 0 12px;
   font-size: 13px;
 }
-/* line 231, ../sass/_header.scss */
+/* line 232, ../sass/_header.scss */
 .header .header-bottom .search .inn input[type='submit'] {
   width: 16px;
   height: 16px;
@@ -549,7 +550,7 @@
   top: 7px;
   text-indent: -9999em;
 }
-/* line 245, ../sass/_header.scss */
+/* line 246, ../sass/_header.scss */
 .header .header-bottom .telephone {
   font-weight: 300;
   font-family: 'Open Sans Condensed', 'sans-serif';
@@ -559,7 +560,7 @@
   text-align: right;
   padding-top: 18px;
 }
-/* line 253, ../sass/_header.scss */
+/* line 254, ../sass/_header.scss */
 .header .header-bottom .telephone span {
   color: #000;
   position: relative;
@@ -1081,7 +1082,7 @@
 }
 /* line 94, ../sass/_grid.scss */
 .grid .item .content-section .document-link .brd-dashed {
-  border-bottom: 2px dashed;
+  border-bottom: 1px dashed;
 }
 /* line 97, ../sass/_grid.scss */
 .grid .item .content-section .document-link:hover {
@@ -1109,7 +1110,7 @@
 }
 /* line 116, ../sass/_grid.scss */
 .grid .item .item-footer .item-bottom-link .brd-dashed {
-  border-bottom: 2px dashed;
+  border-bottom: 1px dashed;
 }
 /* line 119, ../sass/_grid.scss */
 .grid .item .item-footer .item-bottom-link:hover {
@@ -1162,21 +1163,27 @@
 .grid .item .gray-bg + .content-section {
   border-top: none;
 }
+/* line 165, ../sass/_grid.scss */
+.grid .user-section-cutstom-bg {
+  padding: 8px 15px;
+  margin: -8px -15px;
+  background: #ecf9f6;
+}
 
-/* line 166, ../sass/_grid.scss */
+/* line 171, ../sass/_grid.scss */
 .likes-container {
   font-family: bebas_neue_regularregular;
 }
-/* line 168, ../sass/_grid.scss */
+/* line 173, ../sass/_grid.scss */
 .likes-container .dislike {
   font-size: 18px;
   color: #f28585;
 }
-/* line 171, ../sass/_grid.scss */
+/* line 176, ../sass/_grid.scss */
 .likes-container .dislike .icon {
   margin-left: 5px;
 }
-/* line 175, ../sass/_grid.scss */
+/* line 180, ../sass/_grid.scss */
 .likes-container .separator {
   background: url(../img/separator-likes.png) no-repeat;
   width: 9px;
@@ -1186,14 +1193,68 @@
   position: relative;
   top: 5px;
 }
-/* line 184, ../sass/_grid.scss */
+/* line 189, ../sass/_grid.scss */
 .likes-container .like {
   color: #13b0cb;
   font-size: 18px;
 }
-/* line 187, ../sass/_grid.scss */
+/* line 192, ../sass/_grid.scss */
 .likes-container .like .icon {
   mamrgin-right: 5px;
+}
+
+/* line 198, ../sass/_grid.scss */
+.item-answer {
+  padding: 15px 20px;
+}
+/* line 200, ../sass/_grid.scss */
+.item-answer .heading {
+  margin-bottom: 12px;
+}
+/* line 202, ../sass/_grid.scss */
+.item-answer .heading .name-section {
+  float: left;
+}
+/* line 204, ../sass/_grid.scss */
+.item-answer .heading .name-section .small-avatar {
+  float: left;
+}
+/* line 206, ../sass/_grid.scss */
+.item-answer .heading .name-section .small-avatar img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #797f86;
+  border-radius: 100px;
+  display: block;
+}
+/* line 214, ../sass/_grid.scss */
+.item-answer .heading .name-section .name {
+  margin-left: 50px;
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 40px;
+}
+/* line 221, ../sass/_grid.scss */
+.item-answer .heading .title {
+  float: right;
+  color: #2c3e50;
+  font-size: 24px;
+  font-family: bebas_neue_regularregular;
+}
+/* line 230, ../sass/_grid.scss */
+.item-answer .msg textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #d2d2d2;
+  background: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  resize: none;
+  height: 100px;
+}
+/* line 240, ../sass/_grid.scss */
+.item-answer .msg input[type="submit"] {
+  float: right;
 }
 
 /* line 1, ../sass/_user-popover.scss */
