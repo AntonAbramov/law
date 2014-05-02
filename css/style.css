@@ -510,24 +510,23 @@
 }
 /* line 210, ../sass/_header.scss */
 .header .header-bottom .logo {
-  width: 350px;
+  width: 354px;
 }
 /* line 212, ../sass/_header.scss */
 .header .header-bottom .logo img {
   display: block;
-  max-width: 100%;
 }
-/* line 217, ../sass/_header.scss */
+/* line 216, ../sass/_header.scss */
 .header .header-bottom .search {
-  width: 350px;
+  width: 344px;
   padding-left: 50px;
   padding-top: 22px;
 }
-/* line 221, ../sass/_header.scss */
+/* line 220, ../sass/_header.scss */
 .header .header-bottom .search .inn {
   position: relative;
 }
-/* line 223, ../sass/_header.scss */
+/* line 222, ../sass/_header.scss */
 .header .header-bottom .search .inn input[type="search"] {
   display: block;
   width: 100%;
@@ -537,7 +536,7 @@
   padding: 0 60px 0 12px;
   font-size: 13px;
 }
-/* line 232, ../sass/_header.scss */
+/* line 231, ../sass/_header.scss */
 .header .header-bottom .search .inn input[type='submit'] {
   width: 16px;
   height: 16px;
@@ -550,7 +549,7 @@
   top: 7px;
   text-indent: -9999em;
 }
-/* line 246, ../sass/_header.scss */
+/* line 245, ../sass/_header.scss */
 .header .header-bottom .telephone {
   font-weight: 300;
   font-family: 'Open Sans Condensed', 'sans-serif';
@@ -560,7 +559,7 @@
   text-align: right;
   padding-top: 18px;
 }
-/* line 254, ../sass/_header.scss */
+/* line 253, ../sass/_header.scss */
 .header .header-bottom .telephone span {
   color: #000;
   position: relative;
@@ -1730,4 +1729,14 @@ aside h2:before {
 /* line 344, ../sass/_main.scss */
 .t-center {
   text-align: center;
+}
+
+/* line 347, ../sass/_main.scss */
+.join-banner {
+  margin: 20px 0 25px;
+}
+/* line 349, ../sass/_main.scss */
+.join-banner img {
+  display: block;
+  width: 100%;
 }
