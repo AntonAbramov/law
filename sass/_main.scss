@@ -101,7 +101,7 @@ aside  {
 	}
 }
 .big-picture-box {
-	background: url(../img/big-img.png) no-repeat 65% 12px;
+	background: url(../img/big-img.jpg) no-repeat 50% 12px;
 	height: 351px;
 	margin: 0 0 40px;
 	position: relative;
@@ -119,6 +119,15 @@ aside  {
 	.w960 {
 		position: relative;
 		z-index: 3;
+		&:before {
+			content:"";
+			width:245px;
+			height:278px;
+			@include icons-sprite(girl);
+			position: absolute;
+			left:36px;
+			top:74px;
+		}
 	}
 }
 .free-consulting {
