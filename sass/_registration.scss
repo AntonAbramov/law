@@ -1,0 +1,125 @@
+.enter-box {
+	position: relative;
+
+}
+.enter-form {
+	position: absolute;
+	top:58px;
+	z-index: 10;
+	background:#fff;
+	padding:10px 15px;
+	left:0;
+	width:100%;
+	border:2px solid #d2d2d2;
+	border-radius: 8px;
+	&:before {
+		content: "";
+		border: 16px solid;
+		border-color: transparent transparent #d2d2d2 transparent;
+		position: absolute;
+		top: -32px;
+		left: 20px;
+	}
+	&:after {
+		content: "";
+		border: 14px solid;
+		border-color: transparent transparent #fff transparent;
+		position: absolute;
+		top: -27px;
+		left: 22px;
+	}
+	label {
+		display: block;
+		margin:0 0 5px;
+		line-height: 16px;
+	}
+	input[type='email'],
+	input[type='password'] {
+		display:block;
+		width:100%;
+		margin:0 0 10px;
+		border:2px solid #d2d2d2;
+		border-radius: 3px;
+		font-size: 12px;
+		color:#969696;
+		padding:0 8px;
+		height:28px;
+		line-height: 24px;
+	}
+	.forgot-password-link {
+		float:right;
+		font-size:10px;
+		color:#056fb6;
+		text-decoration: underline;
+		position: relative;
+		top:1px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	input[type="checkbox"] {
+		margin-right: 5px;
+	}
+	input[type="submit"] {
+		width:100%;
+		text-align:center;
+		color:#fff;
+		margin:5px 0 0 0!important;
+	}
+	.or {
+		margin:5px -15px 15px;
+		border-bottom:2px solid #d2d2d2;
+		text-align:center;
+		span {
+			position:relative;
+			top:11px;
+			background: #fff;
+			padding:0 5px;
+		}
+	}
+	.enter-sosial-text {
+		font-size: 11px;
+	}
+	.sosials-small {
+		margin-top:5px;
+		li {
+			float:left;
+			margin-left: 11px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	&.registration {
+		&:before {
+			left: auto;
+			right:20px;
+		}
+		&:after {
+			left: auto;
+			right:22px;
+		}
+		.or {
+			margin-top:-5px;
+			position: relative;
+			top:-5px;
+			margin-bottom:10px;
+		}
+		input[type="submit"] {
+			margin: 5px 0 10px!important;
+		}
+		.text {
+			color:#4d4d4d;
+			font-size: 11px;
+			line-height: 14px;
+			a {
+				color:#6c98ca;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

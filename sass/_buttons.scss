@@ -60,3 +60,24 @@
 		font-size: 12px;
 	}
 }
+
+.enter-box {
+	.btn.gray {
+		box-shadow:0 3px 0 #83898f;
+		outline: none;
+		&:active {
+			box-shadow: none;
+			padding:7px 20px 6px;
+			background: #83898f;
+		}
+	}
+	.btn.blue-light {
+		outline: none;
+		box-shadow:0 3px 0 #3bafda;
+		&:active {
+			background: #3bafda;
+			box-shadow: none;
+			padding:7px 20px 6px;
+		}
+	}
+}

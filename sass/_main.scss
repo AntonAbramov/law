@@ -4,7 +4,12 @@ body {
 	font-family: $font;
 	color:#707070;
 	line-height: 20px;
+	> .body {
+		position: relative;
+		z-index: 1;
+	}
 }
+
 h1,h2,h3,h4,h5,h6 {
 	margin-top:0;
 	color:#555;
@@ -97,8 +102,24 @@ aside  {
 }
 .big-picture-box {
 	background: url(../img/big-img.png) no-repeat 65% 12px;
-	height:351px;
-	margin:0 0 40px;
+	height: 351px;
+	margin: 0 0 40px;
+	position: relative;
+	z-index: 2;
+	&:before {
+		content:"";
+		width:100%;
+		background: #fff;
+		height:22px;
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		top:0;
+	}
+	.w960 {
+		position: relative;
+		z-index: 3;
+	}
 }
 .free-consulting {
 	background: url(../img/form.png) no-repeat;
@@ -132,15 +153,16 @@ aside  {
 		background: #fff;
 		font-size: 14px;
 		color:#000;
-		padding:15px 10px;
+		padding:10px 10px;
 		margin-left: 35px;
 	}
 	.bottom-sbm {
 		text-align: center;
-		margin-top:17px;
+		margin-top:12px;
 	}
 	.btn.gray-light {
 		font-size: 18px;
+		padding:7px 20px;
 	}
 }
 .side-nav {
@@ -187,17 +209,18 @@ aside  {
 			> a {
 				color:#0267b5;
 			}
-			ul {
-				display: block;
-			}
+
 		}
-		&.opened, &:hover {
+		&.opened {
 			&.second-sub-menu:after {
 				width:11px;
 				height:6px;
 				@include icons-sprite(arrow-bottom);
 				right:16px;
 				top:16px;
+			}
+			ul {
+				display: block;
 			}
 		}
 	}
@@ -240,4 +263,75 @@ aside  {
 			margin-left: 5px;
 		}
 	}
+}
+.load-more {
+	margin:20px 0;
+	background: url(../img/border-mid.png) no-repeat 50% 15px;
+	position:relative;
+	text-align:center;
+	.btn.blue-light {
+		width:220px;
+		text-align: center;
+		font-size: 16px;
+	}
+}
+.user-raiting {
+	li {
+		float:left;
+		margin-left:8px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+.confirm-email-popup {
+	margin-top:-120px;
+	margin-left:-235px;
+	background: #fff;
+	padding:10px 0 20px;
+	width:470px;
+	height:240px;
+	.heading {
+		background: #1abc9c;
+		height:38px;
+		padding:0 20px;
+		line-height: 34px;
+		text-align: center;
+		color:#fff;
+		margin-bottom:15px;
+		font-size: 30px;
+		font-family: 'Open Sans Condensed', 'sans-serif';
+	}
+	.content {
+		padding:0 30px;
+		input[type="text"] {
+			width:300px;
+			margin:0 auto 20px;
+			display: block;
+			height:30px;
+			border:1px solid #d8d8d8;
+			border-radius: 5px;
+		}
+		.btn.blue-light {
+			font-size: 18px;
+			padding:10px 20px;
+		}
+	}
+	.close {
+		position: absolute;
+		z-index: 2;
+		top:22px;
+		right:8px;
+		button {
+			background: none;
+			border:none;
+			cursor: pointer;
+			width:auto;
+			padding:0;
+			margin: 0;
+		}
+	}
+}
+.t-center {
+	text-align: center;
 }

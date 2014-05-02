@@ -71,6 +71,11 @@
 				position: relative;
 				top:3px;
 			}
+			.btn.dark {
+				padding:10px 20px;
+				position:relative;
+				top:-7px;
+			}
 		}
 	}
 	.footer-block {
@@ -102,6 +107,7 @@
 				margin-left: 22px;
 				position: relative;
 				font-size: 14px;
+				position: relative;
 				&:first-child {
 					margin-left: 0;
 					&:before {
@@ -113,7 +119,8 @@
 					width:2px;
 					height:14px;
 					background: url(../img/footer-separator.png);
-					top:2px;
+					top:8px;
+					position: absolute;
 					left:-11px;
 				}
 				&:hover {

@@ -1,5 +1,6 @@
 .header {
-
+	position: relative;
+	z-index: 2;
 	.header-top {
 		background: #4d4d4d;
 		height:60px;
@@ -41,6 +42,41 @@
 			float:right;
 			.btn {
 				margin-left:15px;
+			}
+		}
+		.entered-box {
+			float:right;
+			.ava-small {
+				float:left;
+				max-width: 40px;
+				img {
+					display: block;
+					width:100%;
+					max-width: 100%;
+					border-radius: 100px;
+					border:2px solid #e3e4e8;
+					position: relative;
+					top:-5px;
+				}
+			}
+			.user-info {
+				margin-left: 50px;
+				.name {
+					color:#fff;
+					font-size: 14px;
+					line-height: 18px;
+				}
+				.exit {
+					font-size: 12px;
+					line-height: 14px;
+					a {
+						color:#5faee3;
+						text-decoration: underline;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -107,7 +143,7 @@
 				}
 				ul {
 					display: none;
-					width:475px;
+					width:330px;
 					position:absolute;
 					top:60px;
 					background: #e3e4e8;
@@ -134,7 +170,7 @@
 						z-index: 1;
 					}
 					li {
-						padding:7px 15px;
+						padding:10px 15px;
 						border-top:2px solid #d2d2d2;
 						float:none;
 						margin-left: 0;
@@ -147,7 +183,15 @@
 					ul {
 						display: block;
 					}
-
+				}
+				&:last-child {
+					ul {
+						left:auto;
+						right:0;
+						&:before {
+							left:96px;
+						}
+					}
 				}
 			}
 		}
