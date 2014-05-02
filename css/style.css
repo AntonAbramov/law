@@ -1240,8 +1240,12 @@
   color: #2c3e50;
   font-size: 24px;
   font-family: bebas_neue_regularregular;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  top: 2px;
 }
-/* line 230, ../sass/_grid.scss */
+/* line 233, ../sass/_grid.scss */
 .item-answer .msg textarea {
   width: 100%;
   border-radius: 5px;
@@ -1252,7 +1256,7 @@
   resize: none;
   height: 100px;
 }
-/* line 240, ../sass/_grid.scss */
+/* line 243, ../sass/_grid.scss */
 .item-answer .msg input[type="submit"] {
   float: right;
 }
