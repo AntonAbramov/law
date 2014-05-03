@@ -7,11 +7,11 @@ $(document).ready(function () {
 		event.stopPropagation();
 		if ($(this).hasClass("enter-button")) {
 			if ($(".enter-form.enter").is(":visible")) {
-				$(".enter-form").hide()
+				$(".enter-form").hide();
 			}
 			else {
 				$(".enter-form.enter").show();
-				$(".enter-form.registration").hide()
+				$(".enter-form.registration").hide();
 			}
 
 		}
@@ -21,14 +21,14 @@ $(document).ready(function () {
 			}
 			else {
 				$(".enter-form.enter").hide();
-				$(".enter-form.registration").show()
+				$(".enter-form.registration").show();
 			}
 
 		}
 	});
 	$(document).on("click", function(event){
 		if ($(event.target).closest(".enter-form").length) {
-			return false;
+			return ;
 		}
 		else {
 			$(".enter-form").hide();

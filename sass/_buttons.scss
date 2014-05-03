@@ -62,18 +62,24 @@
 }
 
 .enter-box {
-	.btn.gray {
+	> .btn.gray {
 		box-shadow:0 3px 0 #83898f;
 		outline: none;
+		&:hover {
+			box-shadow: 0px 3px 2px #83898f;
+			}
 		&:active {
 			box-shadow: none;
 			padding:7px 20px 6px;
 			background: #83898f;
 		}
 	}
-	.btn.blue-light {
+	> .btn.blue-light {
 		outline: none;
 		box-shadow:0 3px 0 #3bafda;
+		&:hover {
+			box-shadow: 0px 3px 2px #3bafda;
+			}
 		&:active {
 			background: #3bafda;
 			box-shadow: none;

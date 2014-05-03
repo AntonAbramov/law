@@ -173,8 +173,11 @@
 	.dislike {
 		font-size: 18px;
 		color:#f28585;
+		@include transition(none);
 		.icon {
 			margin-left:5px;
+			position: relative;
+			top:5px;
 		}
 	}
 	.separator {
@@ -187,6 +190,7 @@
 		top:5px;
 	}
 	.like {
+		@include transition(none);
 		color:#13b0cb;
 			font-size: 18px;
 		.icon {
@@ -243,5 +247,20 @@
 		input[type="submit"] {
 			float:right;
 		}
+	}
+}
+.dislike:hover {
+	color:#d96060;
+
+	.icons-dislike {
+		@include icons-sprite(dislike_hover);
+
+	}
+}
+.like:hover {
+	color:#2b9bb0;
+	.icons-like {
+		@include icons-sprite(like_hover);
+
 	}
 }

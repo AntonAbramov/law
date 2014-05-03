@@ -1,5 +1,6 @@
 body {
-	background:url(../img/patern-bg.jpg) repeat #fff;
+	//background:url(../img/patern-bg.jpg) repeat #fff;
+	background:url(../img/pattern.png) repeat #fff;
 	font-size: 13px;
 	font-family: $font;
 	color:#707070;
@@ -121,12 +122,12 @@ aside  {
 		z-index: 3;
 		&:before {
 			content:"";
-			width:245px;
-			height:278px;
-			@include icons-sprite(girl);
+			width:1187px;
+			height:339px;
+			background: url(../img/girl.png) no-repeat;
 			position: absolute;
-			left:36px;
-			top:74px;
+			left: -120px;
+			top:0px;
 		}
 	}
 }
@@ -135,6 +136,8 @@ aside  {
 	width:610px;
 	height:329px;
 	float:right;
+	position: relative;
+	z-index: 2;
 	padding:40px 20px 10px 50px;
 	h1 {
 		font-family: bebas_neuebold;
