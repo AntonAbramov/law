@@ -1,3 +1,8 @@
+.small-avatar:hover {
+	.user-info-popover {
+		display: block;
+	}
+}
 .user-info-popover {
 	width:350px;
 	border-radius: 8px;
@@ -71,7 +76,8 @@
 		}
 	}
 	.user-info-content {
-		margin:10px 0;
+		padding:10px 0;
+		border-bottom:1px solid #c8c8ca;
 		.answers, .good, .bad {
 			float:left;
 			width:33.3332%;

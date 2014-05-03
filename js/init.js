@@ -34,7 +34,7 @@ $(document).ready(function () {
 			$(".enter-form").hide();
 		}
 
-		if ($(event.target).closest(".user-info-popover").length) {
+/*		if ($(event.target).closest(".user-info-popover").length) {
 			return false;
 		}
 		else if ($(event.target).closest(".user-info-js").length) {
@@ -42,13 +42,13 @@ $(document).ready(function () {
 		}
 		else {
 			$(".user-info-popover").fadeOut();
-		}
+		}*/
 	});
 
-	$(".user-info-js").on("click", function(event){
+	/*$(".user-info-js").on("click", function(event){
 		event.preventDefault();
 		$(this).parents(".user-section").find(".user-info-popover").fadeToggle();
-	});
+	});*/
 
 });
 

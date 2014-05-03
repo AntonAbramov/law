@@ -1305,7 +1305,12 @@
   background-position: 0 -1150px;
 }
 
-/* line 1, ../sass/_user-popover.scss */
+/* line 2, ../sass/_user-popover.scss */
+.small-avatar:hover .user-info-popover {
+  display: block;
+}
+
+/* line 6, ../sass/_user-popover.scss */
 .user-info-popover {
   width: 350px;
   border-radius: 8px;
@@ -1318,7 +1323,7 @@
   left: -40px;
   z-index: 10;
 }
-/* line 12, ../sass/_user-popover.scss */
+/* line 17, ../sass/_user-popover.scss */
 .user-info-popover:before {
   content: "";
   position: absolute;
@@ -1328,7 +1333,7 @@
   border-color: transparent transparent #fff transparent;
   z-index: 1;
 }
-/* line 21, ../sass/_user-popover.scss */
+/* line 26, ../sass/_user-popover.scss */
 .user-info-popover:after {
   content: "";
   position: absolute;
@@ -1338,19 +1343,19 @@
   border: 13px solid;
   border-color: transparent transparent #f1f2f5 transparent;
 }
-/* line 31, ../sass/_user-popover.scss */
+/* line 36, ../sass/_user-popover.scss */
 .user-info-popover > .heading {
   padding-bottom: 15px;
   border-bottom: 1px solid #c8c8ca;
 }
-/* line 34, ../sass/_user-popover.scss */
+/* line 39, ../sass/_user-popover.scss */
 .user-info-popover > .heading .mid-avatar {
   float: left;
   max-width: 70px;
   position: relative;
   top: 5px;
 }
-/* line 39, ../sass/_user-popover.scss */
+/* line 44, ../sass/_user-popover.scss */
 .user-info-popover > .heading .mid-avatar img {
   width: 100%;
   max-width: 100%;
@@ -1358,41 +1363,42 @@
   border-radius: 150px;
   display: block;
 }
-/* line 47, ../sass/_user-popover.scss */
+/* line 52, ../sass/_user-popover.scss */
 .user-info-popover > .heading .user-info-about {
   margin-left: 90px;
 }
-/* line 49, ../sass/_user-popover.scss */
+/* line 54, ../sass/_user-popover.scss */
 .user-info-popover > .heading .user-info-about .name {
   font-weight: 600;
   color: #2c3e50;
   font-size: 18px;
   margin-bottom: 6px;
 }
-/* line 55, ../sass/_user-popover.scss */
+/* line 60, ../sass/_user-popover.scss */
 .user-info-popover > .heading .user-info-about .about {
   font-size: 12px;
   color: #8e8d8d;
   line-height: 16px;
 }
-/* line 60, ../sass/_user-popover.scss */
+/* line 65, ../sass/_user-popover.scss */
 .user-info-popover > .heading .user-info-about .open-profile {
   color: #0267b5;
 }
-/* line 62, ../sass/_user-popover.scss */
+/* line 67, ../sass/_user-popover.scss */
 .user-info-popover > .heading .user-info-about .open-profile a {
   color: #0267b5;
   text-decoration: underline;
 }
-/* line 65, ../sass/_user-popover.scss */
+/* line 70, ../sass/_user-popover.scss */
 .user-info-popover > .heading .user-info-about .open-profile a:hover {
   text-decoration: none;
 }
-/* line 73, ../sass/_user-popover.scss */
+/* line 78, ../sass/_user-popover.scss */
 .user-info-popover .user-info-content {
-  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #c8c8ca;
 }
-/* line 75, ../sass/_user-popover.scss */
+/* line 81, ../sass/_user-popover.scss */
 .user-info-popover .user-info-content .answers, .user-info-popover .user-info-content .good, .user-info-popover .user-info-content .bad {
   float: left;
   width: 33.3332%;
@@ -1401,31 +1407,31 @@
   min-height: 70px;
   color: #2c3e50;
 }
-/* line 82, ../sass/_user-popover.scss */
+/* line 88, ../sass/_user-popover.scss */
 .user-info-popover .user-info-content .answers .heading, .user-info-popover .user-info-content .good .heading, .user-info-popover .user-info-content .bad .heading {
   margin-bottom: 15px;
   font-size: 12px;
   line-height: 14px;
 }
-/* line 87, ../sass/_user-popover.scss */
+/* line 93, ../sass/_user-popover.scss */
 .user-info-popover .user-info-content .answers .numbers, .user-info-popover .user-info-content .good .numbers, .user-info-popover .user-info-content .bad .numbers {
   font-size: 30px;
   font-family: bebas_neue_regularregular;
 }
-/* line 92, ../sass/_user-popover.scss */
+/* line 98, ../sass/_user-popover.scss */
 .user-info-popover .user-info-content .good, .user-info-popover .user-info-content .bad {
   border-left: 1px solid #c8c8ca;
 }
-/* line 96, ../sass/_user-popover.scss */
+/* line 102, ../sass/_user-popover.scss */
 .user-info-popover .user-info-raiting {
   padding: 20px 30px 15px 30px;
 }
-/* line 98, ../sass/_user-popover.scss */
+/* line 104, ../sass/_user-popover.scss */
 .user-info-popover .user-info-raiting .user-raiting {
   float: left;
   margin-right: 40px;
 }
-/* line 102, ../sass/_user-popover.scss */
+/* line 108, ../sass/_user-popover.scss */
 .user-info-popover .user-info-raiting .user-raiting-percents {
   color: #13b0cb;
   font-size: 24px;
@@ -1571,7 +1577,7 @@ aside h2:before {
 
 /* line 104, ../sass/_main.scss */
 .big-picture-box {
-  background: url(../img/big-img.jpg) no-repeat 50% 12px;
+  background: url(../img/big-img.jpg) no-repeat 50% 25px;
   height: 351px;
   margin: 0 0 40px;
   position: relative;
@@ -1801,7 +1807,7 @@ aside h2:before {
 .confirm-email-popup {
   margin-top: -120px;
   margin-left: -235px;
-  background: #fff;
+  background: white url(../img/plan.png) no-repeat;
   padding: 10px 0 20px;
   width: 470px;
   height: 240px;
