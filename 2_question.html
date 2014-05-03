@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Framework</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta name="author" content="Anton Abramov"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+	<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+	<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<section class="header-top">
+			<div class="w960">
+				<nav>
+					<a class="active" href="#">О НАС</a>
+					<a href="#">НОВОСТИ</a>
+					<a href="#">ВОПРОСЫ И <span class="brd-dashed">Ответы</span></a>
+					<a href="#">НАШИ УСЛУГИ</a>
+					<a href="#">КОНТАКТЫ</a>
+				</nav>
+				<div class="enter-box ">
+					<button class="btn gray enter-button">Войти</button>
+					<button class="btn blue-light registration-button">Регистрация</button>
+					<div class="enter-form enter" style="display: none;">
+						<form action="#">
+							<div class="field-row">
+								<label for="email">E-mail</label>
+								<input id="email" type="email" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label for="password">Пароль <a href="#" class="forgot-password-link">Забыли пароль</a></label>
+								<input id="password" type="password" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label>
+									<input type="checkbox"/> Запомнить меня
+								</label>
+							</div>
+							<div class="field-row">
+								<input type="submit" value="Войти" class="btn blue-light" />
+							</div>
+							<div class="or">
+								<span>ИЛИ</span>
+							</div>
+							<div class="enter-sosial-text">Или войдите через соц. сети:</div>
+							<ul class="sosials-small cf">
+								<li>
+									<a href="#" class="icon icons-vk_small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-fb-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-g-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-tw-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-od-small"></a>
+								</li>
+							</ul>
+
+						</form>
+					</div>
+					<div class="enter-form registration" style="display: none;">
+						<form action="#">
+							<div class="enter-sosial-text">Войдите с помощью соц. сети:</div>
+							<ul class="sosials-small cf">
+								<li>
+									<a href="#" class="icon icons-vk_small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-fb-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-g-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-tw-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-od-small"></a>
+								</li>
+							</ul>
+							<div class="or">
+								<span>ИЛИ</span>
+							</div>
+							<div class="field-row">
+								<label for="email-reg">E-mail</label>
+								<input id="email-reg" type="email" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label for="password-reg">Пароль <a href="#" class="forgot-password-link">Забыли пароль</a></label>
+								<input id="password-reg" type="password" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label>
+									<input type="checkbox"/> Запомнить меня
+								</label>
+							</div>
+							<div class="field-row">
+								<input type="submit" value="Зарегистрироваться" class="btn blue-light" />
+							</div>
+							<div class="text">
+								Для регистрации в качестве юриста,
+								перейдите на отдельную <a href="#">страницу
+								регистрации для специалистов</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header-mid">
+			<div class="w960">
+				<ul class="cf">
+					<li>
+						<a href="#"><i class="romb">+</i>Задать вопрос</a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопросАртемий Лебедев ответил</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="romb">14</i>Мои вопросы</a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопрос за</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="romb">5</i>Есть <span class="brd-dashed">Ответы</span></a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопрос за</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="romb">5</i>Вопросы за которыми я слежу</a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопрос за</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="header-bottom">
+			<div class="w960">
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt=""/></a>
+				</div>
+				<div class="search">
+					<form action="#">
+						<div class="inn">
+							<input placeholder="Поиск" type="search"/>
+							<input type="submit" title="Искать" />
+						</div>
+					</form>
+				</div>
+				<div class="telephone">
+					 +7 (812) <span>363 16 40</span>
+				</div>
+			</div>
+		</section>
+	</header>
+	<div class="body">
+		<div class="big-picture-box-inside">
+			<div class="w960">
+				<h1 class="heading">
+					КОНСУЛЬТАЦИИ ЮРИСТОВ
+				</h1 >
+			</div>
+		</div>
+		<ul class="bread-crumbs cf">
+			<li>
+				<a href="#">Главная</a>
+			</li>
+			<li>Консультации</li>
+		</ul>
+		<div class="w960">
+			<div class="left-columns cf">
+				<aside>
+					<h2>Категории</h2>
+					<ul class="side-nav">
+						<li class="opened second-sub-menu">
+							<a href="#">Конституционное право </a>
+							<ul>
+								<li>
+									<a class="active" href="#">Договорное право</a>
+									<a href="#">Право собственности</a>
+									<a href="#">Взыскание задолженности</a>
+								</li>
+							</ul>
+						</li>
+						<li class="second-sub-menu">
+							<a href="#">Семейное право </a>
+							<ul>
+								<li>
+									<a href="#">Договорное право</a>
+									<a href="#">Право собственности</a>
+									<a href="#">Взыскание задолженности</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Недвижимость </a>
+						</li>
+						<li>
+							<a href="#">Трудовое право</a>
+						</li>
+						<li>
+							<a href="#">Защита прав потребителей </a>
+						</li>
+						<li>
+							<a href="#">Нотариат</a>
+						</li>
+						<li>
+							<a href="#">Наследство</a>
+						</li>
+						<li>
+							<a href="#">Уголовное право</a>
+						</li>
+						<li>
+							<a href="#">Административное право</a>
+						</li>
+						<li>
+							<a href="#">Военное право </a>
+						</li>
+						<li>
+							<a href="#">Социальное обеспечение </a>
+						</li>
+						<li>
+							<a href="#">Страхование</a>
+						</li>
+						<li>
+							<a href="#">Гражданство</a>
+						</li>
+						<li>
+							<a href="#">Исполнительное производство</a>
+						</li>
+						<li>
+							<a href="#">Арбитраж</a>
+						</li>
+						<li>
+							<a href="#">Корпоративное право</a>
+						</li>
+						<li>
+							<a href="#">Налоговое право</a>
+						</li>
+						<li>
+							<a href="#">Таможенное право</a>
+						</li>
+						<li>
+							<a href="#">Бухгалтерский учет</a>
+						</li>
+						<li>
+							<a href="#">Лицензирование</a>
+						</li>
+						<li>
+							<a href="#">Интеллектуальная собственность</a>
+						</li>
+					</ul>
+				</aside>
+				<div class="content">
+					<h2 class="green-left-brd light-heading">Консультации юристов</h2>
+					<section class="sorting-section">
+						<div class="sorting">Сортировать <select name=""><option value="">Сортировать по дате</option></select></div>
+						<div class="show-question"><label>Показыать только вопросы без ответов <input type="checkbox"/></label></div>
+					</section>
+					<div class="grid">
+						<div class="item">
+							<section class="user-section gray-bg">
+								<div class="small-avatar">
+									<img src="img/small-ava.jpg" alt=""/>
+								</div>
+								<div class="user-info">
+									<div class="name">Анатолий Вассерман</div>
+									<div class="description">
+										<div class="description-block">
+											<i class="icon icons-calendar"></i> 10 Февраля 2014, 18:52
+										</div>
+
+										<div class="description-block">
+											<i class="icon icons-label"></i> Недвижимость
+										</div>
+										<div class="description-block">
+											<i class="icon icons-place"></i> г. Челябинск
+										</div>
+									</div>
+								</div>
+								<div class="user-info-popover">
+									<div class="heading">
+										<div class="mid-avatar">
+											<img src="img/medium-ava.jpg" alt=""/>
+										</div>
+										<div class="user-info-about">
+											<div class="name">Анатолий Вассерман</div>
+											<div class="about">
+												<div class="city">Юрист, г. Санкт-Петербург</div>
+												<div class="reg-date">Зарегистрирован 15 января 2013</div>
+											</div>
+											<div class="open-profile">
+												<a href="#">Открыть профиль</a>
+											</div>
+										</div>
+
+									</div>
+									<div class="user-info-content cf">
+										<div class="answers">
+											<div class="heading">Ответов</div>
+											<div class="numbers">2034</div>
+										</div>
+										<div class="good">
+											<div class="heading">Хороших</div>
+											<div class="numbers">800</div>
+										</div>
+										<div class="bad">
+											<div class="heading">Плохих</div>
+											<div class="numbers">140</div>
+										</div>
+									</div>
+									<div class="user-info-raiting">
+										<ul class="user-raiting cf">
+											<li><a href="#" class="icon icons-raiting"></a></li>
+											<li><a href="#" class="icon icons-raiting"></a></li>
+											<li><a href="#" class="icon icons-raiting"></a></li>
+											<li><a href="#" class="icon icons-raiting"></a></li>
+											<li><a href="#" class="icon icons-raiting-empty"></a></li>
+										</ul>
+										<span class="user-raiting-percents">76,3 %</span>
+									</div>
+								</div><!-- .user-info-popover -->
+							</section>
+							<section class="content-section">
+								<div class="title">Интересы ребенка</div>
+								<p>Добрый вечер. Моему муж   у и моему несовершеннолетнему сыну свекровь хочет подарить квартиру в равных долях. Меня интересует такой момент: может ли муж продать свою часть без моего ведома?</p>
+								<div>
+									<a class="document-link" href="#"><i class="icon icons-document"></i><span class="brd-dashed">Дарственная.jpg</span></a>
+								</div>
+							</section>
+							<section class="item-footer cf">
+								<a class="item-bottom-link" href="#">
+									<i class="romb">14</i><span class="brd-dashed">Ответы</span>
+								</a>
+								<a class="item-bottom-link" href="#">
+									<i class="icon icons-star">star</i><span class="brd-dashed">Следить за вопросом</span>
+								</a>
+							</section>
+						</div><!-- .item -->
+						<div class="item indent-left">
+							<section class="user-section like-section">
+								<div class="small-avatar">
+									<a class="user-info-js" href="#"><img src="img/small-ava.jpg" alt=""/></a>
+									<div class="user-info-popover">
+										<div class="heading">
+											<div class="mid-avatar">
+												<img src="img/medium-ava.jpg" alt=""/>
+											</div>
+											<div class="user-info-about">
+												<div class="name">Анатолий Вассерман</div>
+												<div class="about">
+													<div class="city">Юрист, г. Санкт-Петербург</div>
+													<div class="reg-date">Зарегистрирован 15 января 2013</div>
+												</div>
+												<div class="open-profile">
+													<a href="#">Открыть профиль</a>
+												</div>
+											</div>
+
+										</div>
+										<div class="user-info-content cf">
+											<div class="answers">
+												<div class="heading">Ответов</div>
+												<div class="numbers">2034</div>
+											</div>
+											<div class="good">
+												<div class="heading">Хороших</div>
+												<div class="numbers">800</div>
+											</div>
+											<div class="bad">
+												<div class="heading">Плохих</div>
+												<div class="numbers">140</div>
+											</div>
+										</div>
+										<div class="user-info-raiting">
+											<ul class="user-raiting cf">
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting-empty"></a></li>
+											</ul>
+											<span class="user-raiting-percents">76,3 %</span>
+										</div>
+									</div><!-- .user-info-popover -->
+								</div>
+								<div class="likes-container">
+									<a href="#" class="dislike">2 <i class="icon icons-dislike"></i> </a>
+									<span class="separator"> </span>
+									<a href="#" class="like"><i class="icon icons-like"></i> 16</a>
+								</div>
+								<div class="user-info">
+									<div class="name">Анатолий Вассерман</div>
+									<div class="description">
+										<div class="description-block">
+											<i class="icon icons-calendar"></i> 10 Февраля 2014, 18:52
+										</div>
+										<div class="description-block">
+											<i class="icon icons-place"></i> г. Челябинск
+										</div>
+									</div>
+								</div>
+
+							</section>
+							<section class="content-section">
+								<div class="title">Интересы ребенка</div>
+								<p>Здравствуйте, Нина!</p>
+								<p>Ваше согласие на продажу своей доли Вашим мужем потребуется постольку, поскольку Вы являетесь законным представителем своего несовершеннолетнего ребенка, являющегося сособственником жилья с Вашим мужем. Имуществом, приобретенным вне брака, в дар, полученным по наследству супруг может распоряжаться по своему усмотрению без согласия другого супруга. Поэтому утверждения коллеги Калинина на этот счет не верны.</p>
+							</section>
+							<section class="item-footer cf">
+								<a class="item-bottom-link" href="#">
+									<i class="icon icons-medal">star</i><span class="brd-dashed">Этот ответ решил мою проблему</span>
+								</a>
+							</section>
+						</div><!-- .item -->
+						<div class="item indent-left">
+							<section class="user-section like-section">
+								<div class="small-avatar">
+									<a class="user-info-js" href="#"><img src="img/small-ava.jpg" alt=""/></a>
+									<div class="user-info-popover">
+										<div class="heading">
+											<div class="mid-avatar">
+												<img src="img/medium-ava.jpg" alt=""/>
+											</div>
+											<div class="user-info-about">
+												<div class="name">Анатолий Вассерман</div>
+												<div class="about">
+													<div class="city">Юрист, г. Санкт-Петербург</div>
+													<div class="reg-date">Зарегистрирован 15 января 2013</div>
+												</div>
+												<div class="open-profile">
+													<a href="#">Открыть профиль</a>
+												</div>
+											</div>
+
+										</div>
+										<div class="user-info-content cf">
+											<div class="answers">
+												<div class="heading">Ответов</div>
+												<div class="numbers">2034</div>
+											</div>
+											<div class="good">
+												<div class="heading">Хороших</div>
+												<div class="numbers">800</div>
+											</div>
+											<div class="bad">
+												<div class="heading">Плохих</div>
+												<div class="numbers">140</div>
+											</div>
+										</div>
+										<div class="user-info-raiting">
+											<ul class="user-raiting cf">
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting-empty"></a></li>
+											</ul>
+											<span class="user-raiting-percents">76,3 %</span>
+										</div>
+									</div><!-- .user-info-popover -->
+								</div>
+								<div class="likes-container">
+									<a href="#" class="dislike">2 <i class="icon icons-dislike"></i> </a>
+									<span class="separator"> </span>
+									<a href="#" class="like"><i class="icon icons-like"></i> 16</a>
+								</div>
+								<div class="user-info">
+									<div class="name">Юрий Калинин</div>
+									<div class="description">
+										<div class="description-block">
+											<i class="icon icons-calendar"></i> 10 Февраля 2014, 18:52
+										</div>
+										<div class="description-block">
+											<i class="icon icons-place"></i> г. Челябинск
+										</div>
+									</div>
+								</div>
+
+							</section>
+							<section class="content-section">
+								<div class="title">Интересы ребенка</div>
+								<p>На любую сделку с недвижимым имуществом требуется согласие. </p>
+							</section>
+							<section class="item-footer cf">
+								<a class="item-bottom-link" href="#">
+									<i class="icon icons-medal">star</i><span class="brd-dashed">Этот ответ решил мою проблему</span>
+								</a>
+							</section>
+						</div><!-- .item -->
+						<div class="item indent-left">
+							<section class="user-section like-section">
+								<div class="small-avatar">
+									<a class="user-info-js" href="#"><img src="img/small-ava-default.jpg" alt=""/></a>
+									<div class="user-info-popover">
+										<div class="heading">
+											<div class="mid-avatar">
+												<img src="img/medium-ava.jpg" alt=""/>
+											</div>
+											<div class="user-info-about">
+												<div class="name">Анатолий Вассерман</div>
+												<div class="about">
+													<div class="city">Юрист, г. Санкт-Петербург</div>
+													<div class="reg-date">Зарегистрирован 15 января 2013</div>
+												</div>
+												<div class="open-profile">
+													<a href="#">Открыть профиль</a>
+												</div>
+											</div>
+
+										</div>
+										<div class="user-info-content cf">
+											<div class="answers">
+												<div class="heading">Ответов</div>
+												<div class="numbers">2034</div>
+											</div>
+											<div class="good">
+												<div class="heading">Хороших</div>
+												<div class="numbers">800</div>
+											</div>
+											<div class="bad">
+												<div class="heading">Плохих</div>
+												<div class="numbers">140</div>
+											</div>
+										</div>
+										<div class="user-info-raiting">
+											<ul class="user-raiting cf">
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting-empty"></a></li>
+											</ul>
+											<span class="user-raiting-percents">76,3 %</span>
+										</div>
+									</div><!-- .user-info-popover -->
+								</div>
+								<div class="likes-container">
+									<a href="#" class="dislike">2 <i class="icon icons-dislike"></i> </a>
+									<span class="separator"> </span>
+									<a href="#" class="like"><i class="icon icons-like"></i> 16</a>
+								</div>
+								<div class="user-info">
+									<div class="name">Евгений Вольнов</div>
+									<div class="description">
+										<div class="description-block">
+											<i class="icon icons-calendar"></i> 10 Февраля 2014, 18:52
+										</div>
+										<div class="description-block">
+											<i class="icon icons-place"></i> г. Челябинск
+										</div>
+									</div>
+								</div>
+
+							</section>
+							<section class="content-section">
+								<div class="title">Интересы ребенка</div>
+								<p>А адрес случайно не улица Пушкина, дом Калатушкина?</p>
+							</section>
+							<section class="item-footer cf">
+								<a class="item-bottom-link" href="#">
+									<i class="icon icons-medal">star</i><span class="brd-dashed">Этот ответ решил мою проблему</span>
+								</a>
+							</section>
+						</div><!-- .item -->
+						<div class="item">
+							<section class="user-section gray-bg">
+								<div class="small-avatar">
+									<a class="user-info-js" href="#"><img src="img/small-ava-default.jpg" alt=""/></a>
+									<div class="user-info-popover">
+										<div class="heading">
+											<div class="mid-avatar">
+												<img src="img/medium-ava.jpg" alt=""/>
+											</div>
+											<div class="user-info-about">
+												<div class="name">Анатолий Вассерман</div>
+												<div class="about">
+													<div class="city">Юрист, г. Санкт-Петербург</div>
+													<div class="reg-date">Зарегистрирован 15 января 2013</div>
+												</div>
+												<div class="open-profile">
+													<a href="#">Открыть профиль</a>
+												</div>
+											</div>
+
+										</div>
+										<div class="user-info-content cf">
+											<div class="answers">
+												<div class="heading">Ответов</div>
+												<div class="numbers">2034</div>
+											</div>
+											<div class="good">
+												<div class="heading">Хороших</div>
+												<div class="numbers">800</div>
+											</div>
+											<div class="bad">
+												<div class="heading">Плохих</div>
+												<div class="numbers">140</div>
+											</div>
+										</div>
+										<div class="user-info-raiting">
+											<ul class="user-raiting cf">
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting"></a></li>
+												<li><a href="#" class="icon icons-raiting-empty"></a></li>
+											</ul>
+											<span class="user-raiting-percents">76,3 %</span>
+										</div>
+									</div><!-- .user-info-popover -->
+								</div>
+								<div class="user-info">
+									<div class="name">Ирина Яровая</div>
+									<div class="description">
+										<div class="description-block">
+											<i class="icon icons-calendar"></i> 10 Февраля 2014, 18:52
+										</div>
+
+										<div class="description-block">
+											<i class="icon icons-label"></i> Защита прав работников
+										</div>
+										<div class="description-block">
+											<i class="icon icons-place"></i> г. Челябинск
+										</div>
+									</div>
+								</div>
+
+							</section>
+							<section class="content-section">
+								<div class="title">Выплата расчета работодателем</div>
+								<p>Здравствуйте..подскажите как быть...уволилась по собственному желанию..расчет начислен копейки. я не согласилась с этим.так как в предыдущем месяце я получила намного больше и за меньшее время работы,нареканий и объяснительных не было,работодатель...</p>
+							</section>
+							<section class="item-footer cf">
+								<a class="item-bottom-link" href="#">
+									<i class="romb">2</i><span class="brd-dashed">Показать ответы</span>
+								</a>
+								<a class="item-bottom-link" href="#">
+									<i class="icon icons-star">star</i><span class="brd-dashed">Следить за вопросом</span>
+								</a>
+							</section>
+						</div><!-- .item -->
+						<div class="load-more">
+							<button class="btn blue-light"><!--<img style="position:relative; top:3px; left:-3px;" src="img/preloader.png" alt=""/>-->
+								<svg style="margin-right:5px; position: relative; top:1px;" width="16" height="16" viewBox="0 0 300 300"
+								     xmlns="http://www.w3.org/2000/svg" version="1.1">
+								  <path d="M 150,0
+								           a 150,150 0 0,1 106.066,256.066
+								           l -35.355,-35.355
+								           a -100,-100 0 0,0 -70.711,-170.711 z"
+								        fill="#ffffff">
+								    <animateTransform attributeName="transform" attributeType="XML"
+								           type="rotate" from="0 150 150" to="360 150 150"
+								           begin="0s" dur="1s" fill="freeze" repeatCount="indefinite" />
+								  </path>
+								</svg>
+								Загружаем</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="w960">
+				<div class="last-news">
+					<div class="mb20">
+						<h3>Последние  новости</h3> <a href="#" class="btn blue-light">Все новости</a>
+					</div>
+					<div class="cf">
+						<div class="news-box">
+							<a href="#" class="news-box-title">Права и обязанности таможенного контроля</a>
+							<p>Таможенный контроль – это комплекс мер, направленный на организацию исполнения таможенного законодательства, который производится с помощью специальных органов.</p>
+							<div class="date">03 февраля 2014</div>
+						</div>
+						<div class="news-box">
+							<a href="#" class="news-box-title">Права и обязанности таможенного контроля</a>
+							<p>Таможенный контроль – это комплекс мер, направленный на организацию исполнения таможенного законодательства, который производится с помощью специальных органов.</p>
+							<div class="date">03 февраля 2014</div>
+						</div>
+					</div>
+				</div>
+				<div class="share-us">
+					<div class="heading">Расскажи о нас</div>
+					<ul class="sharing-icons cf">
+						<li>
+							<a href="#" class="icon icons-vk"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-fb"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-g"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-tw"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-od"></a>
+						</li>
+					</ul>
+					<div class="contacts-info">
+						<div>Россия, Санкт-Петербург, 7-я линия В.О, д. 76, </div>
+						<div>БЦ "Сенатор" оф. 508</div>
+					</div>
+					<button class="btn dark">Консультация</button>
+					<span class="tel"> +7 (812) 363 16 40 </span>
+				</div>
+			</div>
+		</div>
+		<div class="footer-block">
+			<div class="w960">
+				<div class="copyright">«Первый юридический центр» © 2014. All Rights Reserved</div>
+				<div class="price">
+					<a href="#" class="btn blue small">ЦЕНЫ</a>
+				</div>
+				<nav>
+					<a href="#">О НАС</a>
+					<a href="#">ВОПРОСЫ И <span class="brd-dashed">Ответы</span></a>
+					<a href="#">НАШИ УСЛУГИ</a>
+					<a href="#">КОНТАКТЫ</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+
+</body>
+</html>
