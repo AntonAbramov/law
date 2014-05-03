@@ -2082,7 +2082,7 @@ aside h2:before {
   color: #323232;
   font-weight: normal;
   text-transform: uppercase;
-  padding-left: 70px;
+  padding-left: 60px;
 }
 /* line 518, ../sass/_main.scss */
 .title-green-icon .icon {
@@ -2090,4 +2090,46 @@ aside h2:before {
   left: 0;
   top: -8px;
   z-index: 2;
+}
+
+/* line 525, ../sass/_main.scss */
+.ml60 {
+  margin-left: 60px;
+}
+
+/* line 529, ../sass/_main.scss */
+.two-block ul {
+  width: 50%;
+  float: left;
+  margin-bottom: 40px;
+}
+/* line 533, ../sass/_main.scss */
+.two-block ul:first-child {
+  padding-right: 20px;
+}
+/* line 535, ../sass/_main.scss */
+.two-block ul:first-child + ul {
+  padding-left: 20px;
+}
+/* line 540, ../sass/_main.scss */
+.two-block ul li a {
+  display: block;
+  margin-bottom: 7px;
+  line-height: 16px;
+  font-size: 14px;
+  position: relative;
+  color: #0267b5;
+  text-decoration: underline;
+}
+/* line 548, ../sass/_main.scss */
+.two-block ul li a:before {
+  content: "•";
+  position: absolute;
+  left: -10px;
+  top: 1px;
+  color: #0267b5;
+}
+/* line 556, ../sass/_main.scss */
+.two-block ul li a:hover {
+  text-decoration: none;
 }

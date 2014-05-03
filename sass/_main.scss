@@ -514,11 +514,50 @@ aside  {
 	color:#323232;
 	font-weight: normal;
 	text-transform: uppercase;
-	padding-left:70px;
+	padding-left:60px;
 	.icon {
 		position: absolute;
 		left:0;
 		top:-8px;
 		z-index: 2;
 	}
+}
+.ml60 {
+	margin-left: 60px;
+}
+.two-block {
+	ul {
+		width:50%;
+		float:left;
+		margin-bottom:40px;
+		&:first-child {
+			padding-right:20px;
+			& + ul {
+				padding-left:20px;
+			}
+		}
+		li {
+			a {
+				display: block;
+				margin-bottom:7px;
+				line-height:16px ;
+				font-size: 14px;
+				position: relative;
+				color:#0267b5;
+				text-decoration: underline;
+				&:before {
+					content:"•";
+					position: absolute;
+					left:-10px;
+					top:1px;
+					color:#0267b5;
+
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
 }
