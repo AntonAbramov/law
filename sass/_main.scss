@@ -59,6 +59,7 @@ a {
 	}
 }
 .left-columns {
+	margin-bottom: 15px;
 	aside {
 		float:left;
 		width:220px;
@@ -70,6 +71,7 @@ a {
 	}
 }
 .right-columns {
+	margin-bottom: 15px;
 	aside {
 		float:right;
 		width:220px;
@@ -118,18 +120,14 @@ aside  {
 		left: 0;
 		top:0;
 	}
+	.inn {
+		background: url(../img/girl.png) 50% 0 no-repeat;
+		height:340px;
+	}
 	.w960 {
 		position: relative;
 		z-index: 3;
-		&:before {
-			content:"";
-			width:1187px;
-			height:339px;
-			background: url(../img/girl.png) no-repeat;
-			position: absolute;
-			left: -120px;
-			top:0px;
-		}
+
 	}
 }
 .big-picture-box-inside {
@@ -560,4 +558,99 @@ aside  {
 		}
 	}
 
+}
+.forgot-password-box {
+	background: #fff url(../img/blue-bg-pic.png) 45px 40px no-repeat;
+	box-shadow:0 3px 0 #e3e4e8;
+	margin-bottom: 30px;
+	padding:35px 40px 35px 220px;
+	.heading {
+		text-transform: uppercase;
+		color:#3e9cdb;
+		font-weight: normal;
+		line-height: 40px;
+		font-size: 30px;
+		font-family: bebas_neue_regularregular;
+		margin-bottom:15px;
+	}
+	.forgot-password-container {
+		position: relative;
+		input[type="email"], input[type="text"] {
+			width: 100%;
+			padding: 10px 130px 10px 15px;
+			border: 1px solid #b2b2b2;
+			border-radius: 3px;
+			background: #fff;
+			color: #717171;
+			font-size: 18px;
+			height: 40px;
+			position: relative;
+			z-index: 1;
+		}
+		button, input[type="submit"] {
+			height:40px;
+			position: absolute;
+			right:0;
+			top:0;
+			z-index: 2;
+			padding:10px 25px;
+		}
+	}
+}
+.settings-notes {
+	background: #fff;
+	border-bottom:3px solid #d2d2d2;
+	padding:25px 40px;
+	margin-bottom:15px;
+	label {
+		display:block;
+		margin-top:15px;
+		font-size: 14px;
+		color:#2c3e50;
+		&:first-child {
+			margin-top:none;
+		}
+		input[type="checkbox"] {
+			margin-right:20px;
+		}
+	}
+}
+.save-box {
+	&:after {
+		content:"";
+		clear:both;
+		display: table;
+	}
+	.btn {
+		font-size: 18px;
+		float:right;
+		padding:7px 30px;
+		&:focus {
+			outline: none;
+		}
+		font-weight: normal;
+	}
+}
+
+
+
+.side-profile-section {
+	border:1px solid #d8d8d8;
+	padding:15px;
+	.profile-top-section {
+		padding:10px 0;
+		border-bottom:1px solid #c8c8ca;
+	}
+	.large-avatar {
+		width:100px;
+		height:100px;
+		margin:0 auto;
+		img {
+			display: block;
+			width:100%;
+			height:100%;
+			border:2px solid #e3e4e8;
+			border-radius: 200px;
+		}
+	}
 }
