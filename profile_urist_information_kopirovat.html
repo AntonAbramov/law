@@ -269,14 +269,65 @@
 					</ul>
 				</aside>
 				<div class="content">
-					<h2 class="green-left-brd light-heading">Настройка уведомлений</h2>
+					<h2 class="green-left-brd light-heading">Персональная информация</h2>
 					<form action="#">
-						<section class="settings-notes">
-							<label><input type="checkbox"/>Уведомлять по e-mail об ответах на ваши вопросы</label>
-							<label><input type="checkbox"/>Уведомлять по e-mail об ответах на вопросы за которыми вы следите</label>
-							<label><input type="checkbox"/>Уведомлять по e-mail об акциях и ноостях “Первого юридическог центра”</label>
+						<section class="personal-information">
+							<div class="accounts">
+								<ul class="sosials cf">
+									<li>Аккаунты в <br />
+									Соцсетях:</li>
+									<li><a class="icon icons-big-vk" href="#"></a></li>
+									<li><a class="icon icons-big-fb" href="#"></a></li>
+									<li><a class="icon icons-big-g" href="#"></a></li>
+								</ul>
+								<div class="turn-off-acc">
+									<a href="#">Отключить аккаунт</a>
+								</div>
+							</div>
+							<div class="form-fields-section">
+								<div class="field-row">
+									<div class="field-name">Вы: <sup>*</sup></div>
+									<div class="field-block">
+										<label class="checkbox-label"><input name="person-title" type="checkbox"/> Частное лицо</label>
+										<label class="checkbox-label"><input name="person-title" type="checkbox"/> Представитель бизнеса</label>
+									</div>
+								</div>
+								<div class="field-row">
+									<div class="field-name">Имя: <sup>*</sup></div>
+									<div class="field-block"><input type="text" value="Степан" /></div>
+								</div>
+								<div class="field-row">
+									<div class="field-name">Фамилия: <sup>*</sup></div>
+									<div class="field-block"><input type="text" value="Степан" /></div>
+								</div>
+								<div class="field-row">
+									<div class="field-name">Город: <sup>*</sup></div>
+									<div class="field-block">
+										<select name="" id="">
+											<option value="">Воронеж</option>
+											<option value="">Воронеж1</option>
+											<option value="">Воронеж2</option>
+										</select>
+									</div>
+								</div>
+								<div class="field-row">
+									<div class="field-name">Телефон: <sup>*</sup></div>
+									<div class="field-block"><input type="text" value="Степан" /></div>
+								</div>
+								<div class="field-row">
+									<div class="field-name">Аватар:</div>
+									<div class="field-block">
+										<button class="btn chose-file blue-light">выбрать</button>
+										<div class="loaded-file">
+											<div class="name"><i class="icon icons-choose-file"></i> Моя рожа.jpg</div>
+											<a href="#">Удалить файл</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</section>
 						<div class="save-box">
+							<sup>*</sup> — поля обязательные для заполнения
 							<input type="submit" class="btn blue-light" value="Сохранить" />
 						</div>
 					</form>
