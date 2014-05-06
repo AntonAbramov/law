@@ -210,100 +210,175 @@
 		<div class="big-picture-box-inside">
 			<div class="w960">
 				<div class="heading">
-					<span>Кабинет Пользователя</span>
+					<span>ЗАДАЙТЕ СВОЙ ВОПРОС ЮРИСТУ</span>
 				</div>
 			</div>
 		</div>
 		<div class="w960">
-			<div class="left-columns cf">
-				<aside>
-					<div class="side-profile-section">
-						<div class="profile-top-section">
-							<div class="large-avatar">
-								<img src="img/large-ava.jpg" alt=""/>
-							</div>
-							<div class="name">Анатолий вассерман</div>
-							<div class="mark">Юрист</div>
-							<div class="city">г. Санкт-Петербург</div>
-							<div class="registration">Зарегистрирован 15 янв. 2013</div>
-						</div>
-						<div class="user-info-content cf">
-							<div class="answers">
-								<div class="heading">Ответов</div>
-								<div class="numbers">2034</div>
-							</div>
-							<div class="good">
-								<div class="heading">Хороших</div>
-								<div class="numbers">800</div>
-							</div>
-							<div class="bad">
-								<div class="heading">Плохих</div>
-								<div class="numbers">140</div>
-							</div>
-						</div>
-						<div class="user-info-raiting">
-							<ul class="user-raiting cf">
-								<li><a href="#" class="icon icons-raiting"></a></li>
-								<li><a href="#" class="icon icons-raiting"></a></li>
-								<li><a href="#" class="icon icons-raiting"></a></li>
-								<li><a href="#" class="icon icons-raiting"></a></li>
-								<li><a href="#" class="icon icons-raiting-empty"></a></li>
-							</ul>
-							<span class="user-raiting-percents">76,3 %</span>
-						</div>
-					</div>
-					<h2>Кабинет пользователя</h2>
-					<ul class="side-nav">
-						<li class="opened">
-							<a href="#">Информация о пользователе </a>
-						</li>
-						<li>
-							<a href="#">Проффесиональные навыки</a>
-						</li>
-						<li>
-							<a href="#">Сменить пароль</a>
-						</li>
-						<li>
-							<a href="#">Уведомления</a>
-						</li>
-					</ul>
-				</aside>
-				<div class="content">
-					<div class="green-left-brd light-heading">
-						<h1>Настройка уведомлений</h1>
-					</div>
-					<form action="#">
-						<section class="settings-notes">
-							<label><input type="checkbox"/>Уведомлять по e-mail об ответах на ваши вопросы</label>
-							<label><input type="checkbox"/>Уведомлять по e-mail об ответах на вопросы за которыми вы следите</label>
-							<label><input type="checkbox"/>Уведомлять по e-mail об акциях и ноостях “Первого юридическог центра”</label>
-						</section>
-						<div class="save-box">
-							<input type="submit" class="btn blue-light" value="Сохранить" />
-						</div>
-					</form>
+			<ul class="bread-crumbs cf">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>Задать вопрос</li>
+			</ul>
+			<p class="ask-question-helper-text">
+				Чтобы задать вопрос юристу онлайн заполните необходимые данные на этой странице. Это бесплатно и займет у Вас не более трех минут. После публикации Вашего вопроса юристы смогут с ним ознакомиться и помочь Вам.
+			</p>
+			<div class="green-left-brd light-heading mb40">
+				<h1>Ваш вопрос к юристу</h1>
+			</div>
+		</div>
 
+		<div class="w960">
+			<div class="white-block сf">
+				<div class="form-fields-section">
+					<div class="field-row">
+						<div class="field-name">Вы задаете вопрос как: <sup>*</sup></div>
+						<div class="field-block">
+							<label class="checkbox-label"><input name="person-title" type="checkbox"> Частное лицо</label>
+							<label class="checkbox-label"><input name="person-title" type="checkbox"> Представитель бизнеса</label>
+						</div>
+					</div>
+					<div class="field-row">
+						<div class="field-name">Категория права: <sup>*</sup></div>
+						<div class="field-block">
+							<select name="">
+								<option value="">Не выбрано</option>
+								<option value="">Воронеж1</option>
+								<option value="">Воронеж2</option>
+							</select>
+						</div>
+					</div>
+					<div class="field-row error">
+						<div class="field-name">Заголовок вопроса: <sup>*</sup></div>
+						<div class="field-block"><input type="text" value=""></div>
+					</div>
+					<div class="field-row">
+						<div class="field-name">Текст вопроса: <sup>*</sup></div>
+						<div class="field-block field-textarea">
+							<textarea name="" placeholder="Я хочу стать юристом, с чего начать?" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="field-row">
+						<div class="field-name">Аватар:</div>
+						<div class="field-block-question">
+							<div class="cf mb10">
+								<button class="btn chose-file blue-light">выбрать</button>
+								<div class="load-file-question-info">
+									Можно загружать файлы форматов .doc, .pdf, .txt<br />
+									Размер одного файла не более 10 мегабайт
+								</div>
+							</div>
+							<div class="loaded-file">
+								<div class="name"><i class="icon icons-choose-file"></i> заява.txt</div>
+								<a href="#">Удалить файл</a>
+							</div>
+							<div class="loaded-file">
+								<div class="name in-progress"><i class="icon icons-choose-file-not"></i> заява.txt</div>
+								<div class="percents-loaded">
+									<span class="progress-text">60%</span>
+									<span class="progress-bar">
+										<span style="width:60%;" class="completed-bar">&nbsp;</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="green-left-brd light-heading mb40">
+				<h2>Персональная информация</h2>
+			</div>
+			<div class="white-block">
+				<div class="personal-info-question cf">
+					<div class="text-entered">
+						Вы успешно авторизовались,
+						заполните оставшиеся поля.
+					</div>
+					<ul class="sosials cf">
+						<li><a class="icon icons-big-vk" href="#"></a></li>
+						<li><a class="icon icons-big-fb" href="#"></a></li>
+						<li><a class="icon icons-big-g" href="#"></a></li>
+					</ul>
+				</div>
+				<div class="two-blocks cf">
+					<div class="block">
+						<div class="form-fields-section">
+							<div class="field-row">
+								<div class="field-name">Имя: <sup>*</sup></div>
+								<div class="field-block"><input type="text" value="Степан"></div>
+							</div>
+							<div class="field-row">
+								<div class="field-name">Фамилия: <sup>*</sup></div>
+								<div class="field-block"><input type="text" value="Воснецов"></div>
+							</div>
+							<div class="field-row">
+								<div class="field-name">Телефон: <sup>*</sup></div>
+								<div class="field-block"><input type="text" value="+79241234567"></div>
+							</div>
+						</div>
+					</div>
+					<div class="block">
+						<div class="form-fields-section">
+							<div class="field-row error">
+								<div class="field-name">Ваш E-mail: <sup>*</sup></div>
+								<div class="field-block"><input type="email" value=""></div>
+							</div>
+							<div class="field-row">
+								<div class="field-name">Город: <sup>*</sup></div>
+								<div class="field-block">
+									<select name="">
+										<option value="Воронеж">Воронеж</option>
+										<option value="Воронеж">Воронеж1</option>
+										<option value="Воронеж">Воронеж2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="save-box">
+				<sup>*</sup> — поля обязательные для заполнения
+				<input type="submit" class="btn blue-light" value="Продолжить">
 			</div>
 		</div>
 	</div>
 	<footer class="footer">
 		<div class="footer-top">
 			<div class="w960">
-				<div class="last-news">
+				<div class="last-questions">
 					<div class="mb20">
-						<h3>Последние  новости</h3> <a href="#" class="btn blue-light">Все новости</a>
+						<h3>Последние  ВОПРОСЫ</h3> <a href="#" class="btn blue-light">Все вопросы</a>
 					</div>
-					<div class="cf">
-						<div class="news-box">
-							<a href="#" class="news-box-title">Права и обязанности таможенного контроля</a>
-							<p>Таможенный контроль – это комплекс мер, направленный на организацию исполнения таможенного законодательства, который производится с помощью специальных органов.</p>
-							<div class="date">03 февраля 2014</div>
+					<div class="cf two-blocks">
+						<div class="block">
+							<div class="questions-item">
+								<a href="#" class="title">Восстановление своего права на пенсию через 12 лет</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Мне не правильно заплатили</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Льготная пенсия музработнику детского сада</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
 						</div>
-						<div class="news-box">
-							<a href="#" class="news-box-title">Права и обязанности таможенного контроля</a>
-							<p>Таможенный контроль – это комплекс мер, направленный на организацию исполнения таможенного законодательства, который производится с помощью специальных органов.</p>
-							<div class="date">03 февраля 2014</div>
+						<div class="block">
+							<div class="questions-item">
+								<a href="#" class="title">Восстановление своего права на пенсию через 12 лет</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Мне не правильно заплатили</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Льготная пенсия музработнику детского сада</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
 						</div>
 					</div>
 				</div>

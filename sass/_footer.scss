@@ -2,7 +2,7 @@
 	.footer-top {
 		background: #fff;
 		padding:20px 0;
-		.last-news {
+		.last-news, .last-questions {
 			float:left;
 			width:620px;
 			h3 {
@@ -18,14 +18,15 @@
 			}
 			.news-box {
 				float:left;
+				border-bottom:none;
 				width:300px;
-				margin-right: 10px;
-				padding-right:10px;
+				margin:0 10px 0 0;
+				padding:0 10px 0 0;
 				line-height: 18px;
 				color:#969696;
 				.news-box-title {
 					display: block;
-					margin: 0 0 10px;
+					margin: 0 0 10px 0;
 					color:#0267b5;
 					text-decoration: underline;
 					&:hover{
@@ -129,4 +130,40 @@
 			}
 		}
 	}
+	.block {
+		.questions-item {
+			margin-top:20px;
+			padding-left:20px;
+			&:first-child {
+				margin-top:0;
+			}
+			.title {
+				display: blcok;
+				font-size: 15px;
+				line-height: 18px;
+				color:#0267b5;
+				position: relative;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+				&:before {
+					content:"";
+					width:10px;
+					height:11px;
+					position: absolute;
+					left:-20px;
+					top:5px;
+					z-index: 2;
+					@include icons-sprite(circle-blue);
+				}
+			}
+			.answer-counter {
+				color:#969696;
+				font-size: 13px;
+				line-height: 18px;
+			}
+		}
+	}
+
 }
