@@ -131,6 +131,13 @@
 					position:absolute;
 					left:4px;
 					top:0;
+					&.icons-del {
+						top: 2px;
+						left: 10px;
+					}
+					&.icons-red {
+						left:10px;
+					}
 				}
 				.romb {
 					font-style: normal;
@@ -146,6 +153,11 @@
 					line-height: 29px;
 					font-size: 12px;
 					font-style: normal;
+				}
+			}
+			.right {
+				.item-bottom-link  {
+					margin-left: 10px;
 				}
 			}
 		}
@@ -175,6 +187,7 @@
 		font-size: 18px;
 		color:#f28585;
 		@include transition(none);
+		text-decoration: none;
 		.icon {
 			margin-left:5px;
 			position: relative;
@@ -192,6 +205,7 @@
 	}
 	.like {
 		@include transition(none);
+		text-decoration: none;
 		color:#13b0cb;
 			font-size: 18px;
 		.icon {
