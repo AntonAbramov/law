@@ -2697,7 +2697,7 @@ aside h2:before {
 }
 /* line 871, ../sass/_main.scss */
 .form-fields-section .field-row .field-block.field-textarea {
-  width: 80%;
+  width: 85%;
 }
 /* line 873, ../sass/_main.scss */
 .form-fields-section .field-row .field-block.field-textarea textarea {
@@ -3075,4 +3075,29 @@ aside h2:before {
 .question-done-submit .btn {
   padding: 10px 40px;
   font-size: 18px;
+}
+
+/* line 1184, ../sass/_main.scss */
+.question-edit-submit {
+  margin-top: 40px;
+}
+/* line 1186, ../sass/_main.scss */
+.question-edit-submit label {
+  float: left;
+}
+/* line 1188, ../sass/_main.scss */
+.question-edit-submit label input {
+  margin-right: 5px;
+}
+/* line 1192, ../sass/_main.scss */
+.question-edit-submit .buttons-block {
+  float: right;
+  margin-right: 4px;
+}
+/* line 1195, ../sass/_main.scss */
+.question-edit-submit .buttons-block .btn {
+  float: left;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 7px 30px;
 }

@@ -869,7 +869,7 @@ aside  {
 			width:320px;
 			float:left;
 			&.field-textarea {
-				width:80%;
+				width:85%;
 				textarea {
 					width:100%;
 				}
@@ -1179,5 +1179,24 @@ aside  {
 	.btn {
 		padding:10px 40px;
 		font-size: 18px;
+	}
+}
+.question-edit-submit {
+	margin-top:40px;
+	label {
+		float:left;
+		input {
+			margin-right:5px;
+		}
+	}
+	.buttons-block {
+		float:right;
+		margin-right: 4px;
+		.btn {
+			float:left;
+			margin-left: 20px;
+			font-size: 18px;
+			padding:7px 30px;
+		}
 	}
 }

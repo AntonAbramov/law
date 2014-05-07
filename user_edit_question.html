@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Framework</title>
+	<meta charset="UTF-8"/>
+	<!--<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+	<meta name="author" content="Anton Abramov"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+	<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+	<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<section class="header-top">
+			<div class="w960">
+				<nav>
+					<a class="active" href="#">О НАС</a>
+					<a href="#">НОВОСТИ</a>
+					<a href="#">ВОПРОСЫ И <span class="brd-dashed">Ответы</span></a>
+					<a href="#">НАШИ УСЛУГИ</a>
+					<a href="#">КОНТАКТЫ</a>
+				</nav>
+				<div class="enter-box ">
+					<button class="btn gray enter-button">Войти</button>
+					<button class="btn blue-light registration-button">Регистрация</button>
+					<div class="enter-form enter" style="display: none;">
+						<form action="#">
+							<div class="field-row">
+								<label for="email">E-mail</label>
+								<input id="email" type="email" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label for="password">Пароль <a href="#" class="forgot-password-link">Забыли пароль</a></label>
+								<input id="password" type="password" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label>
+									<input type="checkbox"/> Запомнить меня
+								</label>
+							</div>
+							<div class="field-row">
+								<input type="submit" value="Войти" class="btn blue-light" />
+							</div>
+							<div class="or">
+								<span>ИЛИ</span>
+							</div>
+							<div class="enter-sosial-text">Или войдите через соц. сети:</div>
+							<ul class="sosials-small cf">
+								<li>
+									<a href="#" class="icon icons-vk_small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-fb-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-g-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-tw-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-od-small"></a>
+								</li>
+							</ul>
+
+						</form>
+					</div>
+					<div class="enter-form registration" style="display: none;">
+						<form action="#">
+							<div class="enter-sosial-text">Войдите с помощью соц. сети:</div>
+							<ul class="sosials-small cf">
+								<li>
+									<a href="#" class="icon icons-vk_small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-fb-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-g-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-tw-small"></a>
+								</li>
+								<li>
+									<a href="#" class="icon icons-od-small"></a>
+								</li>
+							</ul>
+							<div class="or">
+								<span>ИЛИ</span>
+							</div>
+							<div class="field-row">
+								<label for="email-reg">E-mail</label>
+								<input id="email-reg" type="email" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label for="password-reg">Пароль <a href="#" class="forgot-password-link">Забыли пароль</a></label>
+								<input id="password-reg" type="password" placeholder="Не выбрано" />
+							</div>
+							<div class="field-row">
+								<label>
+									<input type="checkbox"/> Запомнить меня
+								</label>
+							</div>
+							<div class="field-row">
+								<input type="submit" value="Зарегистрироваться" class="btn blue-light" />
+							</div>
+							<div class="text">
+								Для регистрации в качестве юриста,
+								перейдите на отдельную <a href="#">страницу
+								регистрации для специалистов</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header-mid">
+			<div class="w960">
+				<ul class="cf">
+					<li>
+						<a href="#"><i class="romb">+</i>Задать вопрос</a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопросАртемий Лебедев ответил</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="romb">14</i>Мои вопросы</a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопрос за</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="romb">5</i>Есть <span class="brd-dashed">Ответы</span></a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопрос за</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="romb">5</i>Вопросы за которыми я слежу</a>
+						<ul>
+							<li>
+								<a href="#"><i class="smile"></i>Артемий Лебедев ответил на вопрос за</a>
+							</li>
+							<li>
+								<a href="#"><i class="present"></i>Евгений Бахмет ответил на ваш вопрос</a>
+							</li>
+							<li>
+								<a href="#"><i class="romb2"></i>Вы создали новый вопрос</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="header-bottom">
+			<div class="w960">
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt=""/></a>
+				</div>
+				<div class="search">
+					<form action="#">
+						<div class="inn">
+							<input placeholder="Поиск" type="search"/>
+							<input type="submit" title="Искать" />
+						</div>
+					</form>
+				</div>
+				<div class="telephone">
+					 +7 (812) <span>363 16 40</span>
+				</div>
+			</div>
+		</section>
+	</header>
+	<div class="body">
+		<div class="big-picture-box-inside">
+			<div class="w960">
+				<div class="heading">
+					<span>ЗАДАЙТЕ СВОЙ ВОПРОС ЮРИСТУ</span>
+				</div>
+			</div>
+		</div>
+		<div class="w960">
+			<ul class="bread-crumbs cf">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>Задать вопрос</li>
+			</ul>
+			<div class="green-left-brd light-heading mb40">
+				<h1>Редактирование вопроса</h1>
+			</div>
+		</div>
+
+		<div class="w960">
+			<div class="white-block сf">
+				<div class="form-fields-section">
+					<div class="field-row">
+						<div class="field-name">Город</div>
+						<div class="field-block">
+							<select name="">
+								<option value="">Санкт-Петербург</option>
+								<option value="">Санкт-Петербург2</option>
+								<option value="">Санкт-Петербург3</option>
+							</select>
+						</div>
+					</div>
+					<div class="field-row">
+						<div class="field-name">Категория</div>
+						<div class="field-block">
+							<select name="">
+								<option value=""> Заключение и расторжение брака</option>
+								<option value=""> Заключение и расторжение брака</option>
+								<option value=""> Заключение и расторжение брака</option>
+							</select>
+						</div>
+					</div>
+					<div class="field-row">
+						<div class="field-name">Текст вопроса: <sup>*</sup></div>
+						<div class="field-block field-textarea">
+							<textarea name="" placeholder="Я хочу стать юристом, с чего начать?" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="field-row">
+						<div class="field-name"></div>
+						<div class="question-edit-submit cf">
+							<label><input type="checkbox"/>Уведомлять об ответах по E-mail</label>
+							<div class="buttons-block">
+								<button class="btn gray">Отмена</button>
+								<input type="submit" class="btn blue-light right" value="Сохранить">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="w960">
+				<div class="last-questions">
+					<div class="mb20">
+						<h3>Последние  ВОПРОСЫ</h3> <a href="#" class="btn blue-light">Все вопросы</a>
+					</div>
+					<div class="cf two-blocks">
+						<div class="block">
+							<div class="questions-item">
+								<a href="#" class="title">Восстановление своего права на пенсию через 12 лет</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Мне не правильно заплатили</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Льготная пенсия музработнику детского сада</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="questions-item">
+								<a href="#" class="title">Восстановление своего права на пенсию через 12 лет</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Мне не правильно заплатили</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+							<div class="questions-item">
+								<a href="#" class="title">Льготная пенсия музработнику детского сада</a>
+								<div class="answer-counter">2 ответа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share-us">
+					<div class="heading">Расскажи о нас</div>
+					<ul class="sharing-icons cf">
+						<li>
+							<a href="#" class="icon icons-vk"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-fb"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-g"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-tw"></a>
+						</li>
+						<li>
+							<a href="#" class="icon icons-od"></a>
+						</li>
+					</ul>
+					<div class="contacts-info">
+						<div>Россия, Санкт-Петербург, 7-я линия В.О, д. 76, </div>
+						<div>БЦ "Сенатор" оф. 508</div>
+					</div>
+					<button class="btn dark">Консультация</button>
+					<span class="tel"> +7 (812) 363 16 40 </span>
+				</div>
+			</div>
+		</div>
+		<div class="footer-block">
+			<div class="w960">
+				<div class="copyright">«Первый юридический центр» © 2014. All Rights Reserved</div>
+				<div class="price">
+					<a href="#" class="btn blue small">ЦЕНЫ</a>
+				</div>
+				<nav>
+					<a href="#">О НАС</a>
+					<a href="#">ВОПРОСЫ И <span class="brd-dashed">Ответы</span></a>
+					<a href="#">НАШИ УСЛУГИ</a>
+					<a href="#">КОНТАКТЫ</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+
+</body>
+</html>
