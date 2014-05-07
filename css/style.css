@@ -1167,6 +1167,10 @@
 .enter-form.registration .text a:hover {
   text-decoration: none;
 }
+/* line 126, ../sass/_registration.scss */
+.enter-form .error input {
+  border-color: #d33d2c;
+}
 
 /* line 2, ../sass/_grid.scss */
 .grid .item {
